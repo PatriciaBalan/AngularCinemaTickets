@@ -1,0 +1,47 @@
+<div class="col-md-6 offset-md-6">
+    <h4 class="text-center"> Create Movie </h4>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group" style="font-weight: bolder;">
+            <label> Movie Name </label>
+            <input type="text" class = "form-control" id = "movieName"
+            [(ngModel)] = "movie.movieName" name = "movieName">
+        </div>
+    
+        <div class="form-group" style="font-weight: bolder;">
+            <label> Movie Type</label>
+            <input type="text" class = "form-control" id = "movieType"
+            [(ngModel)] = "movie.movieType" name = "movieType">
+        </div>
+    
+        <div class="form-group" style="font-weight: bolder;" >
+            <label> Movie Room </label>
+            <input type="text" class = "form-control" id = "movieRoom"
+            [(ngModel)] = "movie.movieRoom" name = "movieRoom">
+        </div>
+    
+        <div class="form-group" style="font-weight: bolder;">
+            <label> Movie Price </label>
+            <input type="text" class = "form-control" id = "moviePrice"
+            [(ngModel)] = "movie.moviePrice" name = "moviePrice">
+        </div>
+    
+        <div class="form-group" style="font-weight: bolder;">
+            <label> Seats Number </label>
+            <input type="text" class = "form-control" id = "seatsNumber"
+            [(ngModel)] = "movie.seatsNumber" name = "seatsNumber">
+        </div>
+    
+        <div class="form-group" style="font-weight: bolder;">
+            <label> Movie Date </label>
+            <input type="text" class = "form-control" id = "dateMovie"
+            [(ngModel)] = "movie.dateMovie" name = "dateMovie">
+        </div>
+
+        <div class="col-md-6 offset-md-3">     
+            <button (click) = "goToMovieList()" class="btn btn-primary" style="margin-right: 50px">Back</button>
+            <button class = "btn btn-success" type = "submit" style="margin-left: 40px">Submit</button>
+        </div>
+         
+    </form>
+    </div>

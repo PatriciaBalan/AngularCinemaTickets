@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+main,
+h3,
+home,
+/* .navbar-nav li a{  
+
+    font-family: Verdana !important;
+} */
+
+body{
+    background-image: url(https://www.online-tech-tips.com/wp-content/uploads/2020/04/phone-watch-movies.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover      
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color:dodgerblue;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+    .nav-item {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        text-align: left;
+}

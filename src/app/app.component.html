@@ -1,0 +1,37 @@
+<main>
+  <h3>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+          <ul class= "navbar-nav">
+          </ul>
+      </nav>
+<h3>Cinema tickets</h3>
+  </h3>
+</main>
+
+
+<header>
+  <div class="menu">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a routerLink="movies" routerLinkActive="active" class="nav-link" 
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Movie List</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="login" routerLinkActive="active" class="nav-link"
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Login page</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class= "container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class = "footer">
+  <div class = "container">
+      <span>All Rights Reserved 2021</span>
+  </div>    
+</footer>

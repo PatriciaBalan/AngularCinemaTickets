@@ -1,0 +1,13 @@
+<form class ="container" style='margin-left: 600px; margin-top: 100px;'>
+  <div class ="form-group" style="width: 400px;">
+      <label for ="username" style=" font-size: large; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Username</label>
+      <input type="username" class = "form-control" name ="username"[(ngModel)] = "username">
+  </div>
+
+  <div class ="form-group" style="width: 400px;">
+      <label for ="password" style="font-weight: bolder; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Password</label>
+      <input type="password" class = "form-control" name ="password"[(ngModel)] = "password">
+  </div>
+  <br>
+  <button type ="submit" class ="btn btn-secondary" (click)="login()">Log in</button>
+</form>
