@@ -1,5 +1,6 @@
 h2 {
-    color: rgb(13, 4, 94);
+    color:seashell;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 div{
@@ -9,12 +10,15 @@ div{
 
 table{
     position: absolute;
-    width: 30%;
     text-align: center;
     border:1px solid rgb(238, 228, 228);
     opacity: 3;    
-    margin-left: 200px;
-
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color:rgb(238, 228, 228);
+    border-color: royalblue;
+    width: 50%;;
+    font-size:large;
 }
 
 

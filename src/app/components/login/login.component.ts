@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthenticationService } from './auth.service';
 
 @Component({
     selector: 'app-login',
@@ -9,27 +10,31 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 export class LoginComponent implements OnInit {
     
-
-    username:string;
-    password:string;
-
+    username: string;
+    password : string;
+    errorMessage = 'Invalid Credentials';
+    successMessage: string;
+    invalidLogin = false;
+    loginSuccess = false;
+  
     constructor(
-        private http: HttpClient,
-        private router:Router) {
-        
+      private route: ActivatedRoute,
+      private router: Router,
+      private authenticationService: AuthenticationService) {   }
+  
+    ngOnInit() {
     }
-
-    ngOnInit(): void {
-
+  
+    handleLogin() {
+      this.authenticationService.authenticationService(this.username, this.password).subscribe((result)=> {
+        this.invalidLogin = false;
+        this.loginSuccess = true;
+        this.successMessage = 'Login Successful.';
+        this.router.navigate(['/movies']);
+      }, () => {
+        this.invalidLogin = true;
+        this.loginSuccess = false;
+      });      
     }
+  }
 
-    login() {
-        if(this.username=="admin" && this.password =="pass1") {
-          this.router.navigate[("/movies")]
-        }
-         else{
-          alert("Please enter valid details");
-        }
-    }
-
-}

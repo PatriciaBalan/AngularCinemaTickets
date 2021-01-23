@@ -9,7 +9,7 @@ import { Movie } from './models/movie';
 export class MovieService {
   
   // readonly APIUrl ="http://localhost:8090/cinema";
-  private baseURL = "http://localhost:8090/cinema";
+  private baseURL = "http://localhost:8090/cinema/movie";
 
   constructor(private httpClient:HttpClient) { }
 
@@ -18,7 +18,7 @@ export class MovieService {
   }
 
   addMovie(movie: Movie): Observable<Object>{
-    return this.httpClient.post(`${this.baseURL}`, movie);
+    return this.httpClient.post(`${this.baseURL}/create`, movie);
   }
 
   getMovieById(movieId: number): Observable<Movie>{

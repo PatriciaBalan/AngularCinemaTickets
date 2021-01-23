@@ -13,20 +13,24 @@
   <div class="menu">
     <nav class="navbar navbar-expand-sm bg-primary navbar-light">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a routerLink="movies" routerLinkActive="active" class="nav-link" 
-          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Movie List</a>
-        </li>
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Movie List</a> -->
+        <!-- </li> -->
         <li class="nav-item">
           <a routerLink="login" routerLinkActive="active" class="nav-link"
           style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Login page</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="logout" routerLinkActive="active" class="nav-link"
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Logout</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 
-<div class= "container">
+<div class= "container" style="font-weight: bolder; ">
   <router-outlet></router-outlet>
 </div>
 

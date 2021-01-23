@@ -4,7 +4,7 @@ export class Movie {
     movieName: string;
     movieType: string;
     movieRoom: number;
-    moviePrice: String;
-    seatsNumber: number;
+    priceMovie: string;
+    seatNumber: number;
     dateMovie: string;
   }

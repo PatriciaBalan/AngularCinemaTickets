@@ -1,4 +1,4 @@
-<div class="col-md-6 offset-md-3">
+<div class="col-md-6 offset-md-3" style="margin-left:500px">
     <h3 class="text-center"> Update Trip </h3>
     <form (ngSubmit) = "onSubmit()">
 
@@ -22,14 +22,14 @@
     
         <div class="form-group">
             <label> Movie Price </label>
-            <input type="text" class = "form-control" id = "moviePrice"
-            [(ngModel)] = "movie.moviePrice" name = "moviePrice">
+            <input type="text" class = "form-control" id = "priceMovie"
+            [(ngModel)] = "movie.priceMovie" name = "priceMovie">
         </div>
     
         <div class="form-group">
             <label> Seats Number </label>
-            <input type="text" class = "form-control" id = "seatsNumber"
-            [(ngModel)] = "movie.seatsNumber" name = "seatsNumber">
+            <input type="text" class = "form-control" id = "seatNumber"
+            [(ngModel)] = "movie.seatNumber" name = "seatNumber">
         </div>
     
         <div class="form-group">
