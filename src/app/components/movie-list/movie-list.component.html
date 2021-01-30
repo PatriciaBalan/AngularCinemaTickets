@@ -1,39 +1,44 @@
-<h2 class="text-center"> List of Movies </h2>
-
-    <div>     
-        <button (click) = "saveMovie()" class = "btn btn-primary" type = "submit" style="margin-bottom: 20px">Add a new movie</button>
-     </div>
-
-    <div class="container">
-    <table class = "table table-striped">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Movie name</th>
-            <th>Movie type</th>
-            <th>Movie room</th>
-            <th>Movie price</th>
-            <th>Seats number</th>
-            <th>Date Movie</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor = "let movie of movies" >
-              <td> {{ movie.movieId }}</td>
-              <td> {{ movie.movieName }}</td>
-              <td> {{ movie.movieType }}</td>
-              <td> {{ movie.movieRoom }}</td>
-              <td> {{ movie.priceMovie }}</td>
-              <td> {{ movie.seatNumber }}</td>
-              <td> {{ movie.dateMovie | date:'yyyy-MM-dd' }}</td>       
-            <td>
-                <button (click) = "updateMovie(movie.movieId)" class = "btn btn-info" style='width: 150px;'>Update movie</button>
-            </td><td>
-                <button (click) = "deleteMovie(movie.movieId)" class = "btn btn-danger" style="width: 150px;">Delete movie</button>
-            </td>
-        </tr>
-    </tbody>
+<div>
+    <button (click)="saveMovie()" class="btn btn-warning" type="submit" 
+            style="margin-left: 1250px; font-size: large; text-emphasis: hover;
+                     width: 190px; font-weight: bolder; height: 50px; ">Add a new movie</button>
+</div>  
+<br>
+<h2 class="text-center"> Movies list </h2>
+<div class="container" style="margin-left:-200px;">
+    <table class="table table-striped" style="color: ivory; font-size:x-large;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Movie name</th>
+                <th>Movie type</th>
+                <th>Movie room</th>
+                <th>Movie price</th>
+                <th>Seats number</th>
+                <th>Date Movie</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td> {{ movie.movieId }}</td>
+                <td> {{ movie.movieName }}</td>
+                <td> {{ movie.movieType }}</td>
+                <td> {{ movie.movieRoom }}</td>
+                <td> {{ movie.priceMovie }}</td>
+                <td> {{ movie.seatNumber }}</td>
+                <td> {{ movie.dateMovie | date:'yyyy-MM-dd' }}</td>
+                <td>
+                    <button (click)="updateMovie(movie.movieId)" class="btn btn-info" 
+                                style='width: 180px;font-size: large; font-weight: bolder;'>Update
+                        movie</button>
+                </td>
+                <td>
+                    <button (click)="deleteMovie(movie.movieId)" class="btn btn-danger" 
+                                style="width: 150px; font-size: large; font-weight: bolder;">Delete
+                        movie</button>
+                </td>
+            </tr>
+        </tbody>
     </table>
-    
 </div>

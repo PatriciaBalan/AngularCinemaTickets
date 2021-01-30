@@ -1,5 +1,7 @@
-<div class="col-md-6 offset-md-3" style="margin-left:500px">
-    <h3 class="text-center"> Update Trip </h3>
+<div class="col-md-9 offset-md-4" style="margin-left:200px; color: ivory; 
+                                    font-size: x-large; font-family:cursive; 
+                                    text-transform: capitalize;">
+    <h3 class="text-center"> Update movie </h3>
     <form (ngSubmit) = "onSubmit()">
 
         <div class="form-group">
@@ -38,9 +40,11 @@
             [(ngModel)] = "movie.dateMovie" name = "dateMovie">
         </div>
 
-    <div class="col-md-6 offset-md-3">
-        <button (click) = "goToMovieList()" class="btn btn-primary" style="margin-right: 50px">Back</button>
-        <button class = "btn btn-success ml-3" type = "submit" style="margin-left: 40px">Submit</button>
+        <br>
+
+    <div class="col-md-6 offset-md-4">
+        <button (click) = "goToMovieList()" class="btn btn-primary" style="margin-right: 50px; font-size: x-large;">Back</button>
+        <button class = "btn btn-success ml-3" type = "submit" style="margin-left: 40px; font-size: x-large;">Submit</button>
     </div>
          
     </form>

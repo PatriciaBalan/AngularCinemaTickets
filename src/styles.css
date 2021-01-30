@@ -1,16 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
+/* 
 main,
 h3,
-home,
-/* .navbar-nav li a{  
-
-    font-family: Verdana !important;
-} */
+home, */
 
 body{
-    background-image: url(https://www.online-tech-tips.com/wp-content/uploads/2020/04/phone-watch-movies.jpeg);
+    background-image: url('https://i.imgur.com/xhiRfL6.jpg');
     background-repeat: no-repeat;
     background-size: cover      
 }
